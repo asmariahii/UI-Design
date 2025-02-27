@@ -1,0 +1,119 @@
+@use 'variables'; // Assure-toi d'avoir un fichier _variables.scss avec $accent-color
+@use 'mixins';
+@use 'buttons';
+@use 'header';
+@use 'banner';
+@use 'featured';
+@use 'categories';
+@use 'footer';
+@use 'avatar';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #FFE5DA;
+    font-family: 'Alegreya Sans', sans-serif;
+    height: 100vh; /* Hauteur minimale de la vue (viewport height) */
+}
+
+main {
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    margin-top: 10px;
+}
+
+.tracking-section {
+    text-align: left;
+    padding: 20px;
+    background-color: #FFE5DA;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tracking-section h2 {
+    font-size: 24px;
+    font-family: 'Averia Serif Libre', serif;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #D9534F;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.breadcrumb {
+    text-align: right; /* Aligner le texte à droite */
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.tracking-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tracking-container img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.tracking-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 35%;
+    margin-top: 20px;
+}
+
+.tracking-options input {
+    width: 250px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.tracking-options input:focus {
+    border-color: #D9534F;
+}
+
+.save-btn {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #D9534F;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.save-btn:hover {
+    background-color: #b4423d;
+}

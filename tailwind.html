@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asma </title>
+    <link rel="stylesheet" href="output.css"> <!-- Assurez-vous que ce fichier est généré par Tailwind CSS -->
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-pink-100 font-sans dark:bg-rose-dark dark:text-gray-200 flex flex-col min-h-screen">
+
+<!-- Navbar -->
+<nav class="bg-pink-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-white text-2xl font-semibold">Brand</h1>
+        <!-- Dark Mode Toggle Button -->
+        <button id="darkModeToggle" class="text-white bg-pink-500 px-4 py-2 rounded-lg flex items-center space-x-2">
+            <i id="icon" class="fas fa-moon"></i> <!-- Icône par défaut pour le mode sombre -->
+            <span id="modeText">Dark Mode</span> <!-- Texte par défaut pour le mode sombre -->
+        </button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="bg-gradient-to-r from-pink-500 to-pink-700 text-white text-center py-20 px-6">
+    <h1 class="text-4xl font-bold mb-4">
+        Welcome to Tailwind CSS
+    </h1>
+    <p class="text-lg mb-6">
+        Build responsive websites faster with Tailwind!
+    </p>
+    <button class="bg-pink-400 text-white py-2 px-6 rounded-lg shadow-md hover:bg-pink-500 transition-colors">
+        Get Started
+    </button>
+</header>
+
+<!-- Features Section -->
+<section class="py-20 px-6 flex-grow">
+    <h2 class="text-3xl font-semibold text-center mb-12">Our Features</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Feature 1 -->
+        <div class="bg-pink-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-pink-700">
+            <h3 class="text-xl font-semibold mb-4">Feature One</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+                Description of feature one.
+            </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-pink-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-pink-700">
+            <h3 class="text-xl font-semibold mb-4">Feature Two</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+                Description of feature two.
+            </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-pink-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-pink-700">
+            <h3 class="text-xl font-semibold mb-4">Feature Three</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+                Description of feature three.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-4 mt-auto">
+    <p class="text-center">
+        © 2025 Your Brand. All rights reserved.
+    </p>
+</footer>
+
+<script>
+    // Fonction pour basculer entre le mode sombre et le mode clair
+    const toggleButton = document.getElementById('darkModeToggle');
+    const icon = document.getElementById('icon');
+    const modeText = document.getElementById('modeText');
+
+    toggleButton.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        
+        // Modifier l'icône et le texte du bouton en fonction du mode
+        if (document.documentElement.classList.contains('dark')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            modeText.textContent = 'Light Mode'; // Texte pour le mode clair
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            modeText.textContent = 'Dark Mode'; // Texte pour le mode sombre
+        }
+    });
+</script>
+
+</body>
+</html>

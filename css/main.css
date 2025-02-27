@@ -1,0 +1,616 @@
+@charset "UTF-8";
+.btn {
+  display: inline-block;
+  border: solid #E25141;
+  color: white;
+  border-radius: 50px;
+  width: 208px;
+  height: 44px;
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: bold;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); /* Ombre portée avec flou de 4px */
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #E25141;
+}
+
+header {
+  background-color: #53B9C6;
+  width: 100%;
+  box-sizing: border-box;
+  height: 111px; /* Hauteur du header */
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligne le h1 à gauche et les icônes à droite */
+  height: 100%; /* Prend toute la hauteur du header */
+  max-width: 1150px; /* Largeur maximale du header */
+  margin: 0 auto; /* Centre le header horizontalement */
+}
+header nav h1 {
+  color: black;
+  font-size: 35px;
+  font-family: "Average";
+  font-weight: normal; /* "Regular" signifie une épaisseur normale */
+  margin: 0; /* Supprime les marges par défaut */
+}
+header nav .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 45px; /* Espacement de 45px entre les éléments textuels */
+  list-style: none;
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+  position: absolute; /* Position absolue pour centrer les textes */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Ajuste le centrage */
+  /* Style pour les textes */
+}
+header nav .nav-items .text-item a {
+  text-decoration: none;
+  color: black;
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+}
+header nav .nav-items .text-item a:hover {
+  color: white;
+}
+header nav .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Espacement entre les icônes */
+}
+header nav .icons a {
+  text-decoration: none;
+  color: black;
+}
+header nav .icons a:hover {
+  color: white;
+}
+header nav .icons a img {
+  width: 32px; /* Taille des icônes */
+  height: 32px;
+  vertical-align: middle; /* Aligne les icônes verticalement */
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero .hero-text {
+  position: absolute;
+  top: 40%;
+  left: 62%;
+  transform: translateY(-50%);
+  color: black;
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.hero .hero-text h2 {
+  font-family: "Bacasime Antique", serif; /* Police "Bacasime Antique" */
+  font-size: 64px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  margin-bottom: 10px; /* Espacement sous le titre */
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); /* Ombre portée avec flou de 4px */
+  word-wrap: break-word; /* Retour à la ligne si le texte dépasse */
+  margin-bottom: 30px;
+}
+.hero .hero-text p {
+  font-family: "Alegreya Sans", sans-serif; /* Police "Alegreya Sans" */
+  font-size: 30px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  margin-bottom: 30px; /* Espacement sous le paragraphe */
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); /* Ombre portée avec flou de 4px */
+  word-wrap: break-word; /* Retour à la ligne si le texte dépasse */
+}
+
+.featured {
+  max-width: 1150px; /* Largeur maximale de la section */
+  margin: 0 auto; /* Centre la section horizontalement */
+  overflow: hidden;
+}
+.featured .title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 98px;
+  margin-left: 20px;
+}
+.featured h2 {
+  font-family: "Averia Serif Libre", serif; /* Police "Averia Serif Libre" */
+  font-size: 35px; /* Taille de la police */
+  font-weight: bold; /* Style "Bold" */
+  margin-bottom: 21px; /* Espacement sous le titre */
+  margin-top: 0; /* Réinitialise la marge supérieure */
+}
+.featured .ellipse {
+  margin-bottom: 21px; /* Espacement sous le titre */
+  margin-left: 19px;
+}
+.featured .brands {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux images de passer à la ligne si nécessaire */
+  justify-content: center; /* Centre les images horizontalement */
+  gap: 14px; /* Espacement entre les images */
+}
+.featured .brands img {
+  width: 360px; /* Largeur des images */
+  height: 230px; /* Hauteur des images */
+  border-radius: 15px; /* Border radius de 15px */
+  object-fit: cover; /* Conserve le ratio de l'image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère (optionnel) */
+  transition: transform 0.3s ease; /* Animation au survol (optionnel) */
+}
+.featured .brands img:hover {
+  transform: scale(1.05); /* Effet de zoom au survol (optionnel) */
+}
+
+.categories {
+  max-width: 1150px; /* Largeur maximale de la section */
+  margin: 0 auto; /* Centre la section horizontalement */
+  padding: 2rem 20px; /* Espacement intérieur (ajustez selon vos besoins) */
+}
+.categories h2 {
+  font-family: "Averia Serif Libre", serif; /* Police "Averia Serif Libre" */
+  font-size: 35px; /* Taille de la police */
+  font-weight: bold; /* Style "Bold" */
+  margin-bottom: 33px; /* Espacement sous le titre */
+  margin-top: 98px;
+  margin-left: 20px;
+}
+.categories .carousel {
+  display: flex;
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: center; /* Espace les boutons et les catégories */
+  gap: 17px; /* Espacement entre les éléments */
+}
+.categories .carousel button {
+  background: none;
+  border: none;
+  font-size: 2rem; /* Taille des flèches */
+  cursor: pointer;
+  color: #333; /* Couleur des flèches */
+}
+.categories .carousel button:hover {
+  color: #007bff; /* Couleur au survol */
+}
+.categories .carousel .category {
+  text-align: center; /* Centre le texte sous les images */
+}
+.categories .carousel .category img {
+  width: 248px; /* Largeur des images */
+  height: 250px; /* Hauteur des images */
+  border-radius: 500px; /* Border radius de 500px (cercle parfait) */
+  object-fit: cover; /* Conserve le ratio de l'image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère (optionnel) */
+  transition: transform 0.3s ease; /* Animation au survol (optionnel) */
+}
+.categories .carousel .category img:hover {
+  transform: scale(1.05); /* Effet de zoom au survol (optionnel) */
+}
+.categories .carousel .category p {
+  margin-top: 29px;
+  font-family: "Alegreya Sans", sans-serif; /* Police "Alegreya Sans" */
+  font-size: 28px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+}
+
+footer {
+  background-color: #53B9C6; /* Couleur de fond du footer */
+  color: black; /* Couleur du texte */
+  padding: 2rem 0; /* Espacement intérieur */
+  margin-top: 50px; /* Réduit l'espace entre le main et le footer */
+  height: 270px; /* Hauteur du footer */
+}
+footer .footer-sections {
+  max-width: 1150px; /* Largeur maximale du contenu */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  display: flex; /* Aligne les sections horizontalement */
+  justify-content: space-between; /* Espace les sections uniformément */
+  padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+footer .footer-sections h3 {
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  margin-bottom: 27px; /* Espacement sous le titre */
+  margin-top: 51px;
+}
+footer .footer-sections ul {
+  list-style: none; /* Supprime les puces */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+}
+footer .footer-sections ul li {
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  margin-bottom: 16px; /* Espacement entre les éléments de la liste */
+}
+footer .footer-sections ul li a {
+  color: white; /* Couleur des liens */
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+footer .footer-sections ul li a:hover {
+  color: #53B9C6; /* Couleur au survol */
+}
+footer .footer-sections .social-links {
+  display: flex; /* Aligne les icônes horizontalement */
+  gap: 1rem; /* Espacement entre les icônes */
+}
+footer .footer-sections .social-links img {
+  width: 32px; /* Taille des icônes */
+  height: 32px;
+  vertical-align: middle; /* Aligne les icônes verticalement */
+}
+
+.avatar-section {
+  max-width: 1150px; /* Largeur maximale de la section */
+  margin: 0 auto; /* Centre la section horizontalement */
+  overflow: hidden;
+}
+.avatar-section .title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 64px;
+  justify-content: space-between;
+}
+.avatar-section .avatar-title {
+  align-items: center;
+  display: flex;
+}
+.avatar-section .avatar-title h2 {
+  font-family: "Averia Serif Libre", serif; /* Police "Averia Serif Libre" */
+  font-size: 35px; /* Taille de la police */
+  font-weight: bold; /* Style "Bold" */
+  margin-bottom: 64px; /* Espacement sous le titre */
+  margin-top: 0; /* Réinitialise la marge supérieure */
+}
+.avatar-section .avatar-title .ellipse {
+  margin-bottom: 64px; /* Espacement sous le titre */
+  margin-left: 19px;
+}
+.avatar-section .avatar-preview img {
+  width: 1124px; /* Largeur des images */
+  height: 799px; /* Hauteur des images */
+  border-radius: 15px; /* Border radius de 15px */
+  position: relative;
+}
+.avatar-section ul {
+  list-style: none; /* Supprime les puces */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+  display: flex; /* Aligne les éléments horizontalement */
+  gap: 20px; /* Espacement entre les éléments de la liste */
+  margin-bottom: 64px; /* Espacement sous le titre */
+  margin-right: 30px;
+}
+.avatar-section ul li {
+  text-decoration: none;
+  color: black;
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  list-style: none; /* Supprime les puces */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+}
+.avatar-section ul li a {
+  color: black; /* Couleur des liens */
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+.avatar-section ul li a:hover {
+  color: #53B9C6; /* Couleur au survol */
+}
+.avatar-section .avatar-actions {
+  display: flex;
+  gap: 710px;
+  margin-top: 35px;
+}
+.avatar-section .form-container {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.avatar-section .form-container form {
+  gap: 41px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.avatar-section .form-container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  color: black;
+  height: 44px;
+  width: 320px;
+}
+.avatar-section .form-container form input::placeholder {
+  color: black;
+}
+
+main {
+  padding: 20px 30px;
+  border-radius: 10px; /* Optionnel : pour adoucir les bords */
+  margin: 20px auto; /* Centrer le main et ajouter une marge */
+  max-width: 1200px; /* Limiter la largeur du main */
+  margin-top: 10px; /* Réduit l'espace entre le main et le footer */
+}
+
+.eco-clothes {
+  text-align: left;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.eco-clothes .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #e74c3c;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.eco-clothes .content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.eco-clothes img {
+  width: 561px; /* Largeur de l'image */
+  height: 413px; /* Hauteur de l'image */
+  border-radius: 10px;
+}
+.eco-clothes .instructions {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+.eco-clothes .instructions h3 {
+  font-size: 24px;
+}
+.eco-clothes .instructions p {
+  font-size: 18px;
+}
+.eco-clothes .scan-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 0; /* Retirer le padding pour respecter la taille exacte */
+  width: 222px; /* Largeur du bouton */
+  height: 44px; /* Hauteur du bouton */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFE5DA;
+  font-family: "Alegreya Sans", sans-serif;
+  height: 100vh; /* Hauteur minimale de la vue (viewport height) */
+}
+
+main {
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  margin-top: 10px;
+}
+
+.tracking-section {
+  text-align: left;
+  padding: 20px;
+  background-color: #FFE5DA;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tracking-section h2 {
+  font-size: 24px;
+  font-family: "Averia Serif Libre", serif;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #D9534F;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.breadcrumb {
+  text-align: right; /* Aligner le texte à droite */
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.tracking-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tracking-container img {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.tracking-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 35%;
+  margin-top: 20px;
+}
+
+.tracking-options input {
+  width: 250px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.tracking-options input:focus {
+  border-color: #D9534F;
+}
+
+.save-btn {
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #D9534F;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.save-btn:hover {
+  background-color: #b4423d;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFE5DA;
+  font-family: "Alegreya Sans", sans-serif;
+  height: 100vh; /* Hauteur minimale de la vue (viewport height) */
+}
+
+main {
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  margin-top: 10px;
+}
+
+.tracking-section {
+  text-align: left;
+  padding: 20px;
+  background-color: #FFE5DA;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tracking-section h2 {
+  font-size: 24px;
+  font-family: "Averia Serif Libre", serif;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #D9534F;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.breadcrumb {
+  text-align: right; /* Aligner le texte à droite */
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.tracking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Ajuste selon le besoin */
+}
+
+.map-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-delivery-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #D9534F;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFE5DA;
+  font-family: "Alegreya Sans", sans-serif;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */

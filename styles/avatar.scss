@@ -1,0 +1,107 @@
+.avatar-section {
+    max-width: 1150px; /* Largeur maximale de la section */
+    margin: 0 auto; /* Centre la section horizontalement */
+    overflow: hidden; // Masquer tout débordement de l'image
+
+    .title-container {
+        display: flex; // Aligne le titre et l'ellipse sur la même ligne
+        align-items: center; // Centre verticalement les éléments
+        gap: 10px; // Espacement entre le titre et l'ellipse
+        margin-top: 64px; // Espacement au-dessus du titre
+        justify-content: space-between; // Espace les éléments à gauche et à droite
+
+    }
+.avatar-title{
+    align-items: center; // Centre verticalement les éléments
+    display: flex; // Aligne le titre et l'ellipse sur la même ligne
+
+
+    h2 {
+        font-family: 'Averia Serif Libre', serif; /* Police "Averia Serif Libre" */
+        font-size: 35px; /* Taille de la police */
+        font-weight: bold; /* Style "Bold" */
+        margin-bottom: 64px; /* Espacement sous le titre */
+        margin-top: 0; /* Réinitialise la marge supérieure */
+    }
+
+    .ellipse {
+        margin-bottom: 64px; /* Espacement sous le titre */
+margin-left: 19px;
+    }}
+
+    .avatar-preview{
+        img{
+        width: 1124px; /* Largeur des images */
+            height: 799px; /* Hauteur des images */
+            border-radius: 15px; /* Border radius de 15px */
+            position: relative;
+        }
+    }
+
+    ul {
+        list-style: none; /* Supprime les puces */
+        margin: 0; /* Supprime les marges par défaut */
+        padding: 0; /* Supprime les paddings par défaut */
+        display: flex; /* Aligne les éléments horizontalement */
+        gap: 20px; /* Espacement entre les éléments de la liste */
+        margin-bottom: 64px; /* Espacement sous le titre */
+        margin-right: 30px;
+
+        li {
+            text-decoration: none;
+            color: black;
+            font-family: 'Alef', sans-serif; /* Police "Alef" */
+            font-size: 20px; /* Taille de la police */
+            font-weight: normal; /* Style "Regular" */
+            list-style: none; /* Supprime les puces */
+            margin: 0; /* Supprime les marges par défaut */
+            padding: 0; /* Supprime les paddings par défaut */
+
+            a {
+                color: black; /* Couleur des liens */
+                text-decoration: none; /* Supprime le soulignement des liens */
+
+                &:hover {
+                    color: #53B9C6; /* Couleur au survol */
+                }
+            }
+        }
+    }
+    .avatar-actions {
+        display: flex; // Aligne les boutons horizontalement
+        gap: 710px; // Espacement entre les boutons
+        margin-top: 35px; // Espacement au-dessus des boutons (ajustez selon vos besoins)
+    }    
+
+    .form-container{
+        display: flex; // Aligne l'image et le formulaire horizontalement
+        align-items: center; // Centre verticalement les éléments
+        gap: 64px; // Espacement entre l'image et le formulaire
+
+        img{
+        }
+    
+    form {
+        gap: 41px; // Espacement de 41px entre les éléments
+        display: flex; // Aligne les champs verticalement
+        flex-direction: column; // Les champs sont en colonne
+        margin-top: 150px;
+        input {
+            padding: 10px; // Espacement intérieur des champs
+            border: 1px solid #ccc; // Bordure des champs
+            border-radius: 50px; // Coins arrondis
+            font-family: 'Alef', sans-serif; /* Police "Alef" */
+            font-size: 20px; /* Taille de la police */
+            font-weight: normal; /* Style "Regular" */
+            color: black;
+            height: 44px;
+            width: 320px;
+            // Style du placeholder
+        &::placeholder {
+            color: black; // Couleur du placeholder en noir
+        }
+        }
+
+    }
+}
+}

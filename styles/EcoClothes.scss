@@ -1,0 +1,68 @@
+@use 'variables'; // Assure-toi d'avoir un fichier _variables.scss avec $accent-color
+
+
+main {
+    padding: 20px 30px;
+    border-radius: 10px; /* Optionnel : pour adoucir les bords */
+    margin: 20px auto; /* Centrer le main et ajouter une marge */
+    max-width: 1200px; /* Limiter la largeur du main */
+    margin-top: 10px; /* Réduit l'espace entre le main et le footer */
+}
+
+.eco-clothes {
+    text-align: left;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: variables.$accent-color;
+        border-radius: 50%;
+        margin-left: 5px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    img {
+        width: 561px;  /* Largeur de l'image */
+        height: 413px; /* Hauteur de l'image */
+        border-radius: 10px;
+    }
+
+    .instructions {
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .scan-btn {
+        background: variables.$accent-color;
+        color: white;
+        padding: 0; /* Retirer le padding pour respecter la taille exacte */
+        width: 222px;  /* Largeur du bouton */
+        height: 44px;  /* Hauteur du bouton */
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+}

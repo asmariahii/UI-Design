@@ -1,0 +1,56 @@
+.categories {
+    max-width: 1150px; /* Largeur maximale de la section */
+    margin: 0 auto; /* Centre la section horizontalement */
+    padding: 2rem 20px; /* Espacement intérieur (ajustez selon vos besoins) */
+
+    h2 {
+        font-family: 'Averia Serif Libre', serif; /* Police "Averia Serif Libre" */
+        font-size: 35px; /* Taille de la police */
+        font-weight: bold; /* Style "Bold" */
+        margin-bottom: 33px; /* Espacement sous le titre */
+        margin-top: 98px;
+margin-left: 20px;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center; /* Centre les éléments verticalement */
+        justify-content: center; /* Espace les boutons et les catégories */
+        gap: 17px; /* Espacement entre les éléments */
+
+        button {
+            background: none;
+            border: none;
+            font-size: 2rem; /* Taille des flèches */
+            cursor: pointer;
+            color: #333; /* Couleur des flèches */
+
+            &:hover {
+                color: #007bff; /* Couleur au survol */
+            }
+        }
+
+        .category {
+            text-align: center; /* Centre le texte sous les images */
+
+            img {
+                width: 248px; /* Largeur des images */
+                height: 250px; /* Hauteur des images */
+                border-radius: 500px; /* Border radius de 500px (cercle parfait) */
+                object-fit: cover; /* Conserve le ratio de l'image */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère (optionnel) */
+                transition: transform 0.3s ease; /* Animation au survol (optionnel) */
+                &:hover {
+                    transform: scale(1.05); /* Effet de zoom au survol (optionnel) */
+                }
+            }
+
+            p {
+                margin-top: 29px;
+                font-family: 'Alegreya Sans', sans-serif; /* Police "Alegreya Sans" */
+                font-size: 28px; /* Taille de la police */
+                font-weight: normal; /* Style "Regular" */
+            }
+        }
+    }
+}

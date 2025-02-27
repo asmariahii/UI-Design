@@ -1,0 +1,48 @@
+.featured {
+    max-width: 1150px; /* Largeur maximale de la section */
+    margin: 0 auto; /* Centre la section horizontalement */
+    overflow: hidden; // Masquer tout débordement de l'image
+
+    .title-container {
+        display: flex; // Aligne le titre et l'ellipse sur la même ligne
+        align-items: center; // Centre verticalement les éléments
+        gap: 10px; // Espacement entre le titre et l'ellipse
+        margin-top: 98px; // Espacement au-dessus du titre
+        margin-left: 20px; // Espacement à gauche du titre
+   
+    }
+
+    h2 {
+        font-family: 'Averia Serif Libre', serif; /* Police "Averia Serif Libre" */
+        font-size: 35px; /* Taille de la police */
+        font-weight: bold; /* Style "Bold" */
+        margin-bottom: 21px; /* Espacement sous le titre */
+        margin-top: 0; /* Réinitialise la marge supérieure */
+    }
+
+    .ellipse {
+        margin-bottom: 21px; /* Espacement sous le titre */
+        margin-left: 19px;
+
+    }
+
+    .brands {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux images de passer à la ligne si nécessaire */
+        justify-content: center; /* Centre les images horizontalement */
+        gap: 14px; /* Espacement entre les images */
+
+        img {
+            width: 360px; /* Largeur des images */
+            height: 230px; /* Hauteur des images */
+            border-radius: 15px; /* Border radius de 15px */
+            object-fit: cover; /* Conserve le ratio de l'image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère (optionnel) */
+            transition: transform 0.3s ease; /* Animation au survol (optionnel) */
+
+            &:hover {
+                transform: scale(1.05); /* Effet de zoom au survol (optionnel) */
+            }
+        }
+    }
+}
