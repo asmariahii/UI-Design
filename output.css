@@ -8,6 +8,7 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
 
 *,
 ::before,
@@ -1089,3 +1090,78 @@ td p-4.flex.items-center {
   font-weight: 900 !important;
   color: black !important;
 }
+
+.star-container {
+  display: flex;
+  gap: 1.5rem; /* Espacement entre les étoiles */
+  margin-bottom: 2.4rem; /* Espacement en bas */
+}
+
+.star {
+  font-size: 64px; /* Taille de 64px */
+
+  color: yellow; /* Couleur des étoiles */
+  cursor: pointer;
+  transition: transform 0.3s; /* Transition fluide pour l'agrandissement */
+}
+
+.star:hover {
+  transform: scale(1.5); /* Augmente la taille de l'étoile au survol */
+}
+
+.emoji-container {
+  display: flex;
+  gap: 2rem; /* Espacement entre les emojis */
+  margin-bottom: 2.5rem; /* Espacement en bas */
+}
+
+.emoji {
+  font-size: 64px; /* Taille des emojis */
+  cursor: pointer;
+  transition: transform 0.3s; /* Transition fluide pour l'agrandissement */
+}
+
+.emoji:hover {
+  transform: scale(1.5); /* Agrandir les emojis au survol */
+}
+
+h1 {
+  font-family: 'Averia Serif Libre', serif;
+  font-weight: bold;
+}
+
+.p {
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  color: black !important;
+}
+
+.search-input-container {
+  position: relative; /* Make the container relative so the button can be positioned inside it */
+  width: 41%; /* Or specify a width depending on your layout */
+}
+
+.search-input {
+  width: 100%; /* Adjust width as needed */
+  padding: 1.25rem; /* p-5 */
+  font-size: 1.5rem; /* text-2xl */
+  border-radius: 9999px; /* rounded-full */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  outline: none; /* focus:outline-none */
+}
+
+.search-button {
+  position: absolute; /* Position the button inside the container */
+  top: 50%; /* Center vertically */
+  right: 0.9rem; /* Align the button to the right */
+  transform: translateY(-50%); /* Correct the vertical alignment */
+  background-color: #E25141;
+  color: white;
+  padding: 0.10rem; /* p-5 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 2rem; /* text-3xl */
+  cursor: pointer;
+  width: 40px; /* Change the width to your desired size (e.g., 100px) */
+}
+
+

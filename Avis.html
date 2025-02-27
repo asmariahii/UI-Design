@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LookVibe - Accueil</title>
+        <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"> <!-- Add CSS file for styling -->
+        <link rel="stylesheet" href="output.css"> <!-- Add CSS file for styling -->
+        <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>LookVibe</h1>
+                <ul class="nav-items">
+                    <!-- Partie texte -->
+                    <li class="text-item"><a href="#">Accueil</a></li>
+                    <li class="text-item"><a href="#">ChatBot</a></li>
+                    <li class="text-item"><a href="#">Communauté</a></li>
+                    <li class="text-item"><a href="#">Service client</a></li>
+                </ul>
+                <div class="icons">
+                    <!-- Partie icônes -->
+                    <a href="#"><img src="images/search_icon.png" alt="Rechercher" width="32" height="32"></a>
+                    <a href="#"><img src="images/account_icon.png" alt="Profil" width="32" height="32"></a>
+                    <a href="#"><img src="images/notif_icon.png" alt="Notification" width="32" height="32"></a>
+                    <a href="#"><img src="images/cart_icon.png" alt="Panier" width="32" height="32"></a>
+                </div>
+            </nav>
+        </header>
+
+   
+        <section class="avatar-section">
+            <div class="title-container">
+                <div class="avatar-title">
+                 <h2>Avis</h2>
+                <img src="images/Ellipse 1.png" alt="Ellipse" class="ellipse">
+            </div>
+                <ul>
+                    <li><a href="#">Accueil </a></li>
+                    <li><a href="#" > >  Service client </a></li>
+                    <li><a href="#" > > Avis </a></li>
+
+                </ul>
+                </div>
+                <div class="min-h-screen bg-[#FFE5DA] p-10">
+                    <!-- Titre et navigation -->
+                    <div class="flex justify-between items-center mb-10">
+                  
+                     
+                    </div>
+                  
+                    <!-- Contenu principal -->
+                    <main class="bg-[#FFE5DA] p-16 flex flex-col items-center text-center w-full">
+                        <!-- Titre -->
+                       
+                    
+                       
+
+                        <!-- Question principale -->
+                        <h1 class="text-4xl mb-10">Avons-nous pu vous aider avec votre problème ?</h1>
+                    
+                        <!-- Émojis -->
+                        <div class="emoji-container">
+                            <span class="emoji">😊</span>
+                            <span class="emoji">😐</span>
+                            <span class="emoji">😡</span>
+                        </div>
+                        
+                    
+                        <!-- Question notation -->
+                        <p class="text-3xl mb-6">Si oui, quelle note nous donneriez-vous ?</p>
+                    
+                        <!-- Étoiles de notation -->
+                        <div class="star-container">
+                            <span class="star">🌟</span>
+                            <span class="star">🌟</span>
+                            <span class="star">🌟</span>
+                            <span class="star">🌟</span>
+                            <span class="star">🌟</span>
+                        </div>
+                        
+                        
+                        <script>
+                          // Sélectionner toutes les étoiles
+                          const stars = document.querySelectorAll('.star');
+                          
+                          // Ajouter un événement pour changer la taille et la couleur
+                          stars.forEach(star => {
+                            star.addEventListener('mouseover', () => {
+                              star.style.transform = 'scale(1.8)'; // Augmenter la taille au survol
+                              star.style.transition = 'transform 0.3s';
+                            });
+                        
+                            star.addEventListener('mouseout', () => {
+                              star.style.transform = 'scale(1)';
+                            });
+                          });
+                        </script>
+                        
+                    
+                        <!-- Champ de saisie -->
+                        <div class="search-input-container">
+                            <input type="text" class="search-input" placeholder="Avez-vous d’autres conseils ?">
+                            <button class="search-button">
+                                ⬆
+                            </button>
+                        </div>
+                        
+                    </main>
+                    
+                    
+
+              
+                    
+                    </div>
+                  
+               
+                  
+        </section>
+        
+        
+        
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-sections">
+            <div>
+                <h3>Shop</h3>
+                <ul>
+                    <li>Panier</li>
+                    <li>Mes commandes</li>
+                    <li>Suivre mon colis</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Fonctionnalités</h3>
+                <ul>
+                    <li>Avatar 3D</li>
+                    <li>Eco-clothes</li>
+                    <li>Chat communautaire</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Aide & Contact</h3>
+                <ul>
+                    <li>Chat-bot</li>
+                    <li>Support client</li>
+                    <li>Réclamation</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <ul class="social-links">
+                    <li><a href="#"><img src="images/facebook.png" alt="Facebook" width="32" height="32"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="Instagram" width="32" height="32"></a></li>
+                <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="32" height="32"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
