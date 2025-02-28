@@ -1,0 +1,58 @@
+footer {
+    background-color: #53B9C6; /* Couleur de fond du footer */
+    color: black; /* Couleur du texte */
+    padding: 2rem 0; /* Espacement intérieur */
+    margin-top: 280px;
+    height: 270px; /* Hauteur du header */
+    
+    .footer-sections {
+        max-width: 1150px; /* Largeur maximale du contenu */
+        margin: 0 auto; /* Centre le contenu horizontalement */
+        display: flex; /* Aligne les sections horizontalement */
+        justify-content: space-between; /* Espace les sections uniformément */
+        padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+        box-sizing: border-box; /* Inclut le padding dans la largeur */
+
+        h3 {
+            font-family: 'Alef', sans-serif; /* Police "Alef" */
+            font-size: 20px; /* Taille de la police */
+            font-weight: normal; /* Style "Regular" */
+            margin-bottom: 27px; /* Espacement sous le titre */
+            margin-top: 51px;
+        }
+
+        ul {
+            
+            list-style: none; /* Supprime les puces */
+            margin: 0; /* Supprime les marges par défaut */
+            padding: 0; /* Supprime les paddings par défaut */
+
+            li {
+                font-family: 'Alef', sans-serif; /* Police "Alef" */
+                font-size: 20px; /* Taille de la police */
+                font-weight: normal; /* Style "Regular" */
+                margin-bottom: 16px; /* Espacement entre les éléments de la liste */
+
+                a {
+                    color: white; /* Couleur des liens */
+                    text-decoration: none; /* Supprime le soulignement des liens */
+
+                    &:hover {
+                        color: #53B9C6; /* Couleur au survol */
+                    }
+                }
+            }
+        }
+
+        .social-links {
+            display: flex; /* Aligne les icônes horizontalement */
+            gap: 1rem; /* Espacement entre les icônes */
+
+            img {
+                width: 32px; /* Taille des icônes */
+                height: 32px;
+                vertical-align: middle; /* Aligne les icônes verticalement */
+            }
+        }
+    }
+}

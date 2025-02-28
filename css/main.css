@@ -1,0 +1,119 @@
+@charset "UTF-8";
+header {
+  background-color: #53B9C6;
+  width: 100%;
+  box-sizing: border-box;
+  height: 111px; /* Hauteur du header */
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligne le h1 à gauche et les icônes à droite */
+  height: 100%; /* Prend toute la hauteur du header */
+  max-width: 1150px; /* Largeur maximale du header */
+  margin: 0 auto; /* Centre le header horizontalement */
+}
+header nav h1 {
+  color: black;
+  font-size: 35px;
+  font-family: "Average";
+  font-weight: normal; /* "Regular" signifie une épaisseur normale */
+  margin: 0; /* Supprime les marges par défaut */
+}
+header nav .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 45px; /* Espacement de 45px entre les éléments textuels */
+  list-style: none;
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+  position: absolute; /* Position absolue pour centrer les textes */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Ajuste le centrage */
+  /* Style pour les textes */
+}
+header nav .nav-items .text-item a {
+  text-decoration: none;
+  color: black;
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+}
+header nav .nav-items .text-item a:hover {
+  color: white;
+}
+header nav .icons {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* Espacement entre les icônes */
+}
+header nav .icons a {
+  text-decoration: none;
+  color: black;
+}
+header nav .icons a:hover {
+  color: white;
+}
+header nav .icons a img {
+  width: 32px; /* Taille des icônes */
+  height: 32px;
+  vertical-align: middle; /* Aligne les icônes verticalement */
+}
+
+footer {
+  background-color: #53B9C6; /* Couleur de fond du footer */
+  color: black; /* Couleur du texte */
+  padding: 2rem 0; /* Espacement intérieur */
+  margin-top: 280px;
+  height: 270px; /* Hauteur du header */
+}
+footer .footer-sections {
+  max-width: 1150px; /* Largeur maximale du contenu */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  display: flex; /* Aligne les sections horizontalement */
+  justify-content: space-between; /* Espace les sections uniformément */
+  padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+footer .footer-sections h3 {
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  margin-bottom: 27px; /* Espacement sous le titre */
+  margin-top: 51px;
+}
+footer .footer-sections ul {
+  list-style: none; /* Supprime les puces */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+}
+footer .footer-sections ul li {
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  margin-bottom: 16px; /* Espacement entre les éléments de la liste */
+}
+footer .footer-sections ul li a {
+  color: white; /* Couleur des liens */
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+footer .footer-sections ul li a:hover {
+  color: #53B9C6; /* Couleur au survol */
+}
+footer .footer-sections .social-links {
+  display: flex; /* Aligne les icônes horizontalement */
+  gap: 1rem; /* Espacement entre les icônes */
+}
+footer .footer-sections .social-links img {
+  width: 32px; /* Taille des icônes */
+  height: 32px;
+  vertical-align: middle; /* Aligne les icônes verticalement */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #FFE5DA;
+}
+
+/*# sourceMappingURL=main.css.map */

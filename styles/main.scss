@@ -1,0 +1,9 @@
+@use 'mixins' as *;
+@use 'header' as *;
+@use 'footer' as *;
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #FFE5DA;
+}
+
