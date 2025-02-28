@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookVibe - Connexion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="flex h-screen">
+    <!-- Partie Gauche : Image -->
+    <div class="w-1/2 relative">
+        <img src="images/robe.jpg" alt="Fashion Model" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Partie Droite : Formulaire de Connexion -->
+    <div class="w-1/2 flex flex-col justify-center items-center bg-[#FFE7DE] p-10">
+        <h1 class="text-4xl font-serif text-black mb-6">LookVibe</h1>
+        <div class="flex space-x-6 mb-4">
+            <span class="text-lg font-bold border-b-2 border-[#E25141] pb-1 cursor-pointer">Connexion</span>
+            <a href="inscription.html" class="text-lg font-semibold text-gray-700 hover:text-black cursor-pointer">Inscription</a>
+        </div>
+
+        <form class="w-3/4">
+            <div class="mb-4">
+                <input type="email" placeholder="Email" class="w-full p-4 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E25141]">
+            </div>
+
+            <div class="relative mb-2">
+                <input type="password" placeholder="Mot de passe" class="w-full p-4 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E25141]">
+                <img src="images/hidden_eye_hide.png" alt="Cacher" class="absolute top-1/2 right-4 w-6 h-6 transform -translate-y-1/2 cursor-pointer">
+            </div>
+
+            <!-- Correction : Lien "Mot de passe oublié ?" bien aligné à gauche -->
+            <a href="#" class="text-sm text-black font-semibold w-full text-right block hover:underline">
+                Mot de passe oublié ?
+            </a>
+            
+            <button type="submit" class="w-full bg-[#E25141] text-white py-3 rounded-full font-semibold text-lg shadow-md hover:bg-[#cf3b2d] transition mt-4">Connexion</button>
+        </form>
+
+        <div class="mt-6 flex flex-col items-center">
+            <p class="text-gray-700 mb-2">ou</p>
+            <div class="flex justify-center space-x-6">
+                <img src="images/f.png" alt="Facebook" class="w-8">
+                <img src="images/google.png" alt="Google" class="w-8">
+                <img src="images/apple.png" alt="Apple" class="w-8">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

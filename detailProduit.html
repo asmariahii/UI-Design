@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Produit - LookVibe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-[#FFE7DE]">
+
+    <!-- Navbar -->
+    <header class="bg-[#5EC2C2] p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-black">LookVibe</h1>
+        <nav class="flex space-x-6">
+            <a href="#" class="text-black hover:text-gray-700">Accueil</a>
+            <a href="#" class="text-black hover:text-gray-700">ChatBot</a>
+            <a href="#" class="text-black hover:text-gray-700">Communauté</a>
+            <a href="#" class="text-black hover:text-gray-700">Service client</a>
+        </nav>
+        <div class="flex space-x-4">
+            <a href="#"><img src="images/search_icon.png" alt="Rechercher" width="24"></a>
+            <a href="#"><img src="images/account_icon.png" alt="Profil" width="24"></a>
+            <a href="#"><img src="images/cart_icon.png" alt="Panier" width="24"></a>
+        </div>
+    </header>
+
+    <!-- Fil d'Ariane -->
+    <div class="text-sm text-gray-700 mt-4 ml-10">
+        <a href="#" class="hover:underline">Accueil</a> > 
+        <a href="#" class="hover:underline">Capuches</a> > 
+        <span class="text-black font-semibold">Détails</span>
+    </div>
+
+    <!-- Section Détails Produit -->
+    <div class="max-w-6xl mx-auto mt-10 flex gap-10">
+        <!-- Image principale -->
+        <div class="w-1/2">
+            <img src="images/hoodie-gray.jpg" alt="Hoodie" class="w-full h-[400px] object-cover rounded-md">
+            <div class="flex space-x-2 mt-4">
+                <img src="images/hoodie-front.jpg" alt="Hoodie" class="w-20 h-20 object-cover rounded-md border border-gray-300">
+                <img src="images/hoodie-back.jpg" alt="Hoodie" class="w-20 h-20 object-cover rounded-md border border-gray-300">
+                <img src="images/hoodie-thumbnail1.jpg" alt="Hoodie" class="w-20 h-20 object-cover rounded-md border border-gray-300">
+                <img src="images/hoodie-thumbnail2.jpg" alt="Hoodie" class="w-20 h-20 object-cover rounded-md border border-gray-300">
+            </div>
+        </div>
+
+        <!-- Infos produit -->
+        <div class="w-1/2">
+            <h2 class="text-3xl font-bold">Adidas</h2>
+            <p class="text-xl font-bold text-[#E25141] mt-2">20 DT</p>
+            <p class="text-gray-700 mt-2">Sweat Capuche Coton</p>
+            
+            <!-- Sélecteur de tailles -->
+            <select class="mt-4 p-2 border border-gray-300 rounded-md w-full">
+                <option>Taille disponible</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+
+            <!-- Description -->
+            <h3 class="mt-4 text-lg font-bold">Description</h3>
+            <p class="text-gray-700">
+                Sweat à capuche gris épais pour homme. Grand lot, sweat à capuche unisexe en coton.
+            </p>
+
+            <!-- Boutons d'action -->
+            <div class="mt-6 space-y-4">
+                <button class="w-full bg-[#E25141] text-white py-3 rounded-full font-bold">Ajouter au panier</button>
+                <button class="w-full border border-[#E25141] text-[#E25141] py-3 rounded-full font-bold">Essayer en 3D</button>
+            </div>
+
+            <!-- Infos livraison -->
+            <div class="mt-6 text-gray-700">
+                <p>🚚 Livraison garantie le 1er février</p>
+                <p>🔄 14 jours pour changer d'avis</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Articles Similaires -->
+    <div class="max-w-6xl mx-auto mt-16">
+        <h3 class="text-2xl font-bold">Articles similaires</h3>
+        <div class="flex space-x-6 mt-4">
+            <img src="images/hoodie-red.jpg" alt="Hoodie" class="w-1/3 h-[250px] object-cover rounded-md shadow-md">
+            <img src="images/hoodie-black.jpg" alt="Hoodie" class="w-1/3 h-[250px] object-cover rounded-md shadow-md">
+            <img src="images/hoodie-red2.jpg" alt="Hoodie" class="w-1/3 h-[250px] object-cover rounded-md shadow-md">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#5EC2C2] p-10 mt-10">
+        <div class="grid grid-cols-4 text-black">
+            <div>
+                <h3 class="font-bold">Shop</h3>
+                <ul>
+                    <li>Panier</li>
+                    <li>Mes commandes</li>
+                    <li>Suivre mon colis</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Fonctionnalités</h3>
+                <ul>
+                    <li>Avatar 3D</li>
+                    <li>Eco-clothes</li>
+                    <li>Chat communautaire</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Aide & Contact</h3>
+                <ul>
+                    <li>Chat-bot</li>
+                    <li>Support client</li>
+                    <li>Réclamation</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Suivez-nous</h3>
+                <div class="flex space-x-4 mt-2">
+                    <img src="images/facebook.png" alt="Facebook" width="24">
+                    <img src="images/instagram.png" alt="Instagram" width="24">
+                    <img src="images/linkedin.png" alt="LinkedIn" width="24">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

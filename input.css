@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply inline-block border border-[#E25141] text-white rounded-full w-[208px] h-[44px] font-[Alef] text-[20px] font-bold shadow-md cursor-pointer;
+    }
+    .btn-primary {
+        @apply bg-[#E25141] hover:bg-[#f06a5a] transition;
+    }
+}
