@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css"> <!-- Add CSS file for styling -->
         <link rel="stylesheet" href="output.css"> <!-- Add CSS file for styling -->
-        <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
@@ -62,54 +62,42 @@
                        
 
                         <!-- Question principale -->
-                        <h1 class="text-4xl mb-10">Avons-nous pu vous aider avec votre problème ?</h1>
-                    
+                        <h1 class="text-[35px] font-bold mb-10" style="font-family: 'Averia Serif Libre', serif;">
+                            Avons-nous pu vous aider avec votre problème ?
+                          </h1>
+                                              
                         <!-- Émojis -->
-                        <div class="emoji-container">
-                            <span class="emoji">😊</span>
-                            <span class="emoji">😐</span>
-                            <span class="emoji">😡</span>
+                        <div class="emoji-container flex gap-8 mb-4">
+                            <img src="./images/emoji1.png" alt="emoji" class="w-16 h-16 transition-transform transform hover:scale-110">
+                            <img src="./images/emoji2.png" alt="emoji" class="w-18 h-16 transition-transform transform hover:scale-110">
+                            <img src="./images/emoji33.png" alt="emoji" class="w-16 h-15 transition-transform transform hover:scale-110">
                         </div>
                         
-                    
-                        <!-- Question notation -->
-                        <p class="text-3xl mb-6">Si oui, quelle note nous donneriez-vous ?</p>
+                        <h2 class="text-3xl mt-4 mb-4">Si oui, quelle note nous donneriez-vous ?</h2>
+                        
                     
                         <!-- Étoiles de notation -->
-                        <div class="star-container">
-                            <span class="star">🌟</span>
-                            <span class="star">🌟</span>
-                            <span class="star">🌟</span>
-                            <span class="star">🌟</span>
-                            <span class="star">🌟</span>
-                        </div>
+                        <div class="star-container flex gap-8 mb-4">
+                            <img src="./images/star.png" alt="emoji" class="w-19 h-19 transition-transform transform hover:scale-110">
+                            <img src="./images/star.png" alt="emoji" class="w-19 h-19 transition-transform transform hover:scale-110">
+                            <img src="./images/star.png" alt="emoji" class="w-19 h-19 transition-transform transform hover:scale-110">
+                            <img src="./images/star.png" alt="emoji" class="w-19 h-19 transition-transform transform hover:scale-110">
+                            <img src="./images/star.png" alt="emoji" class="w-19 h-19 transition-transform transform hover:scale-110">
+ </div>
                         
-                        
-                        <script>
-                          // Sélectionner toutes les étoiles
-                          const stars = document.querySelectorAll('.star');
-                          
-                          // Ajouter un événement pour changer la taille et la couleur
-                          stars.forEach(star => {
-                            star.addEventListener('mouseover', () => {
-                              star.style.transform = 'scale(1.8)'; // Augmenter la taille au survol
-                              star.style.transition = 'transform 0.3s';
-                            });
-                        
-                            star.addEventListener('mouseout', () => {
-                              star.style.transform = 'scale(1)';
-                            });
-                          });
-                        </script>
+          
                         
                     
                         <!-- Champ de saisie -->
-                        <div class="search-input-container">
-                            <input type="text" class="search-input" placeholder="Avez-vous d’autres conseils ?">
-                            <button class="search-button">
+                        <div class="search-input-container relative w-[45%]">
+                            <input type="text" class="search-input w-full py-5 text-2xl rounded-full border border-gray-300 outline-none font-[Alef] text-black" placeholder="Avez-vous d’autres conseils ?">
+                            <button class="search-button absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#E25141] text-white py-1 px-3 rounded-full text-3xl cursor-pointer w-[40px]">
                                 ⬆
                             </button>
                         </div>
+                        
+                        
+                        
                         
                     </main>
                     

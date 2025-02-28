@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="css/main.css"> <!-- Add CSS file for styling -->
         <link rel="stylesheet" href="output.css"> <!-- Add CSS file for styling -->
         <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alef:wght@700&display=swap" rel="stylesheet">
+
+
     </head>
     <body>
         <header>
@@ -45,58 +49,53 @@
                     <li><a href="#" > > Panier </a></li>
                 </ul>
                 </div>
-                <div class="min-h-screen bg-[#FFE5DA] p-10">
-                    <!-- Titre et navigation -->
-                    <div class="flex justify-between items-center mb-10">
+                <div class="min-h-screen bg-[#FFE5DA] p-0.1 overflow-auto">
+                  <!-- Your content goes here -->
+                                    <!-- Titre et navigation -->
                   
                      
-                    </div>
                   
                     <!-- Contenu principal -->
-                    <main>
-                      <table class="w-full mt-6 border-collapse text-left">
-                        <thead class="border-b-2 border-black w-full">
+                    <main >
+                      <table class="w-[1120px]">
+                        <thead class="border-b border-black">
                           <tr>
-                            <th class="p-5 text-[20px] font-normal text-left">Produit</th>
-                            <th class="p-4 text-[20px] font-normal text-right">Taille</th>
-                            <th class="p-4 text-[20px] font-normal text-right">Prix</th>
-                            <th class="p-4 text-[20px] font-normal text-center">Quantité</th>
-                            <th class="p-4 text-[20px] font-normal text-right">Total</th>
+                            <th class="p-5 text-[20px] font-normal text-left w-48 h-27 font-[20px] font-[Alef]">Produit</th>
+                            <th class="p-4 text-[20px] font-normal text-right w-48 h-27 font-[20px] font-[Alef]">Taille</th>
+                            <th class="p-4 text-[20px] font-normal text-right w-48 h-27 font-[20px] font-[Alef]">Prix</th>
+                            <th class="p-4 text-[20px] font-normal text-center w-48 h-27 font-[20px] font-[Alef]">Quantité</th>
+                            <th class="p-4 text-[20px] font-normal text-right w-48 h-27 font-[20px] font-[Alef]">Total</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td class="flex items-center p-4 space-x-4">
-                              <img src="images/sweatshirt.png" alt="Sweat Capuche Coton" class="product-image">
+                              <img src="images/sweatshirt.png" alt="Sweat Capuche Coton" class="w-[103px] h-[127px] object-cover rounded-[15px] mr-4">
                               <span>Sweat Capuche Coton</span>
                             </td>
                             <td class="p-5 text-right">XL</td>
                             <td class="p-4 text-right">20 DT</td>
                             <td class="p-4 text-right">
-                              <div class="quantity-container">
-                                <button class="button-circle">-</button>
-                                <span class="quantity-value">1</span>
-                                <button class="button-circle">+</button>
+                              <div class="flex items-center justify-center gap-2">
+                                <button class="w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold border-none cursor-pointer transition-colors duration-300 hover:bg-red-600">-</button>
+                                <span class="text-lg font-medium text-center w-6">1</span>
+                                <button class="w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold border-none cursor-pointer transition-colors duration-300 hover:bg-red-600">+</button>
                               </div>
                             </td>
-                            
-                            
-                            
-                            
-                            
                             <td class="p-4 text-right">20 DT</td>
                           </tr>
                         </tbody>
                       </table>
                     
+                    
                       <!-- Ligne horizontale avec bordure noire -->
-                      <hr class="my-4 border-t-2 border-black">
+                      <hr class="w-[1120px] h-0 border-t-[1px] border-[#000000] mx-auto">
                     
                       <div class="flex justify-between items-center mt-9 w-[1120px] mx-auto">
-                        <strong class="total-text">Total : 20 DT</strong>
+                        <strong class="text-xl font-bold text-black font-Alef">Total : 20 DT</strong>
                         <button 
                           class="bg-[#E25141] text-white rounded-[50px] opacity-100 hover:bg-[#c65a4a] px-6 py-2"
-                          style="width: 208px; height: 44px;">
+                          >
                           Commander
                         </button>
                       </div>
@@ -153,3 +152,5 @@
     </footer>
 </body>
 </html>
+
+
