@@ -792,6 +792,22 @@ video {
   top: 1081px;
 }
 
+.left-\[1025px\] {
+  left: 1025px;
+}
+
+.top-\[306px\] {
+  top: 306px;
+}
+
+.left-\[1014px\] {
+  left: 1014px;
+}
+
+.top-\[840px\] {
+  top: 840px;
+}
+
 .float-right {
   float: right;
 }
