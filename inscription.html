@@ -7,34 +7,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
 </head>
-<body class="flex h-screen w-full">
+<body class="flex h-screen w-full m-0 p-0">
 
-    <!-- Partie Gauche : Image (Corrigée) -->
-    <div class="w-1/2 h-screen">
-        <img src="images/robe.jpg" alt="Fashion Model" class="w-full h-full object-cover">
-    </div>
+    <!-- Partie Gauche : Image -->
+<div class="w-1/2 h-screen">
+    <img src="images/robe.jpg" alt="Fashion Model" class="w-full h-full object-cover">
+</div>
 
-    <!-- Partie Droite : Formulaire -->
-    <div class="w-1/2 flex flex-col justify-center items-center bg-[#FFE7DE] p-10">
-        <h1 class="text-4xl font-serif text-black mb-6">LookVibe</h1>
+<!-- Partie Droite : Formulaire -->
+<div class="w-1/2 flex flex-col justify-center items-center bg-[#FFE7DE] px-10">
 
+        <h1 class="text-[35px] font-normal text-black leading-[42.56px] mb-6">
+            LookVibe
+        </h1>
+        
         <div class="flex space-x-6 mb-6">
             <a href="connexion.html" class="text-lg font-semibold text-gray-700 hover:text-black cursor-pointer">Connexion</a>
-            <span class="text-lg font-semibold border-b-2 border-[#E25141] pb-1 text-black cursor-pointer">Inscription</span>
+            <span class="text-lg font-semibold border-b-2 border-[#E25141] pb-1 text-[#E25141] cursor-pointer">Inscription</span>
         </div>
+        
+        
 
-        <form class="w-3/4">
-            <div class="mb-4">
+        <form class="w-[80%] max-w-md flex flex-col items-center">
+            <div class="mb-4 w-full">
                 <input type="email" placeholder="Email" class="w-full p-4 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E25141]">
             </div>
-
-            <div class="relative mb-6">
+        
+            <div class="relative mb-6 w-full">
                 <input type="password" placeholder="Mot de passe" class="w-full p-4 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E25141]">
                 <img src="images/hidden_eye_hide.png" alt="Cacher" class="absolute top-1/2 right-4 w-6 h-6 transform -translate-y-1/2 cursor-pointer">
             </div>
-
-            <button type="submit" class="w-full bg-[#E25141] text-white py-3 rounded-full font-semibold text-lg shadow-md hover:bg-[#cf3b2d] transition">Inscrire</button>
+        
+            <!-- Bouton centré -->
+            <button type="submit" class="w-[208px] h-[44px] bg-[#E25141] text-white py-2 rounded-full font-semibold text-lg shadow-md hover:bg-[#cf3b2d] transition mt-4">
+                Inscrire
+            </button>
         </form>
+        
 
         <div class="mt-6 flex flex-col items-center">
             <p class="text-gray-700 mb-2">ou</p>

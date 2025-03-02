@@ -6,6 +6,7 @@
     <title>Catalogue - LookVibe</title>
     <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
+   
 </head>
 <body class="bg-[#FFE7DE]">
 
@@ -50,11 +51,28 @@
      
     </section>
 
-    <!-- Filtres -->
     <div class="flex space-x-4 ml-10 mt-4">
-        <button class="px-6 py-2 bg-[#E25141] text-white rounded-full">Trier <span>▼</span></button>
-        <button class="px-6 py-2 bg-[#E25141] text-white rounded-full">Genre <span>▼</span></button>
-        <button class="px-6 py-2 bg-[#E25141] text-white rounded-full">Taille <span>▼</span></button>
+        <select id="sort" class="px-6 py-2 bg-[#E25141] text-white rounded-full" onchange="filterProducts()">
+            <option value="">Trier</option>
+            <option value="asc">Prix croissant</option>
+            <option value="desc">Prix décroissant</option>
+        </select>
+        
+        <select id="gender" class="px-6 py-2 bg-[#E25141] text-white rounded-full" onchange="filterProducts()">
+            <option value="">Genre</option>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+        </select>
+        
+        <select id="size" class="px-6 py-2 bg-[#E25141] text-white rounded-full" onchange="filterProducts()">
+            <option value="">Taille</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
     </div>
 
     <!-- Catalogue Produits -->

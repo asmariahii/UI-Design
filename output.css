@@ -748,6 +748,22 @@
   margin-top: 98px
 }
 
+.ml-4 {
+  margin-left: 1rem
+}
+
+.ml-8 {
+  margin-left: 2rem
+}
+
+.ml-6 {
+  margin-left: 1.5rem
+}
+
+.ml-9 {
+  margin-left: 2.25rem
+}
+
 .block {
   display: block
 }
@@ -1078,6 +1094,18 @@
 
 .w-full {
   width: 100%
+}
+
+.w-\[300px\] {
+  width: 300px
+}
+
+.w-\[80\%\] {
+  width: 80%
+}
+
+.w-\[90\%\] {
+  width: 90%
 }
 
 .max-w-5xl {
@@ -1488,6 +1516,31 @@
   padding-bottom: 0.75rem
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+
 .pb-1 {
   padding-bottom: 0.25rem
 }
@@ -1617,6 +1670,10 @@
 
 .font-semibold {
   font-weight: 600
+}
+
+.leading-\[42\.56px\] {
+  line-height: 42.56px
 }
 
 .tracking-normal {
