@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LookVibe - Accueil</title>
+        <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"> <!-- Add CSS file for styling -->
+        <link rel="stylesheet" href="output.css"> <!-- Add CSS file for styling -->
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>LookVibe</h1>
+                <ul class="nav-items">
+                    <!-- Partie texte -->
+                    <li class="text-item"><a href="#">Accueil</a></li>
+                    <li class="text-item"><a href="#">ChatBot</a></li>
+                    <li class="text-item"><a href="#">Communauté</a></li>
+                    <li class="text-item"><a href="#">Service client</a></li>
+                </ul>
+                <div class="icons">
+                    <!-- Partie icônes -->
+                    <a href="#"><img src="images/search_icon.png" alt="Rechercher" width="32" height="32"></a>
+                    <a href="#"><img src="images/account_icon.png" alt="Profil" width="32" height="32"></a>
+                    <a href="#"><img src="images/notif_icon.png" alt="Notification" width="32" height="32"></a>
+                    <a href="#"><img src="images/cart_icon.png" alt="Panier" width="32" height="32"></a>
+                </div>
+            </nav>
+        </header>
+
+   
+        <main class="text-left p-5 bg-[#FFE5DA] rounded-lg max-w-[1200px] mx-auto mt-8">
+
+            <section>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-[35px] font-bold leading-auto tracking-normal font-['Averia_Serif_Libre']">
+                        Eco-clothes 
+                        <span class="inline-block w-2 h-2 bg-red-500 rounded-full ml-1"></span>
+                    </h2>
+                    
+                    <div class="text-[20px] tracking-normal text-gray-700 font-['Alef']">
+                        <a href="#" class="text-gray-800">Accueil</a> > 
+                        <a href="#" class="text-gray-800">Mesures</a> > 
+                        <a href="#" class="text-gray-800">Avatar 3D</a> > Scanner
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-3 text-lg mb-3 mt-8">
+                    <label for="cameraSwitch">Activer la caméra</label>
+                    <input type="checkbox" id="cameraSwitch" class="w-10 h-5 appearance-none bg-gray-400 rounded-full relative cursor-pointer transition duration-300 checked:bg-[#D9534F] before:content-[''] before:absolute before:top-0.5 before:left-0.5 before:w-4 before:h-4 before:bg-white before:rounded-full before:transition before:duration-300 checked:before:left-5">
+                </div>
+                
+        
+                <div class="flex flex-col items-center text-center">
+                    <img src="images/scanner.png" alt="Analyse du visage" class="w-full max-w-[1120px] h-auto max-h-[709px] rounded-lg mb-[19px]">
+                
+                    <div class="w-[960px] max-w-[960px] h-[44px] rounded-full p-1 flex items-center justify-between">
+                        <div class="flex-1 h-[30px] bg-gray-300 rounded-full mx-2 overflow-hidden relative">
+                            <!-- Texte centré indépendamment de la largeur de la barre rouge -->
+                            <div class="absolute inset-0 flex items-center justify-center text-white text-[20px] font-bold">
+                                Analyse de la couleur des yeux en cours...
+                            </div>
+                            <!-- Barre de progression rouge -->
+                            <div class="h-full bg-[#D9534F] rounded-full duration-500" style="width: 75%;"></div>
+                        </div>
+                        <span class="text-[20px] text-gray-700" >67%</span>
+                    </div>
+                    
+                </div>
+                
+            </section>
+        </main>
+        
+        
+        
+
+    <!-- Footer -->
+    <footer class="mt-10">
+        <div class="footer-sections">
+            <div>
+                <h3>Shop</h3>
+                <ul>
+                    <li>Panier</li>
+                    <li>Mes commandes</li>
+                    <li>Suivre mon colis</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Fonctionnalités</h3>
+                <ul>
+                    <li>Avatar 3D</li>
+                    <li>Eco-clothes</li>
+                    <li>Chat communautaire</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Aide & Contact</h3>
+                <ul>
+                    <li>Chat-bot</li>
+                    <li>Support client</li>
+                    <li>Réclamation</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <ul class="social-links">
+                    <li><a href="#"><img src="images/facebook.png" alt="Facebook" width="32" height="32"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="Instagram" width="32" height="32"></a></li>
+                <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="32" height="32"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
