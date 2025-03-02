@@ -1,0 +1,25 @@
+@use 'variables'; // Assure-toi d'avoir un fichier _variables.scss avec $accent-color
+@use 'mixins';
+@use 'buttons';
+@use 'header';
+@use 'banner';
+@use 'featured';
+@use 'categories';
+@use 'footer';
+@use 'avatar';
+@use 'EcoClothes';
+@use 'SuivreColis';
+@use 'suivrecolis2';
+@use 'Scanner';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #FFE5DA;
+    font-family: 'Alegreya Sans', sans-serif;
+    height: 100vh; // Hauteur minimale de la vue (viewport height)
+}
+
+
+
