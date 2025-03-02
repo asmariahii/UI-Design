@@ -1228,6 +1228,22 @@ video {
   margin-top: -2rem;
 }
 
+.-ml-10 {
+  margin-left: -2.5rem;
+}
+
+.-ml-6 {
+  margin-left: -1.5rem;
+}
+
+.-ml-1 {
+  margin-left: -0.25rem;
+}
+
+.-ml-0 {
+  margin-left: -0px;
+}
+
 .block {
   display: block;
 }
