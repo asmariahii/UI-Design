@@ -1,19 +1,20 @@
-@mixin flex-center {
+@mixin flex($direction: row){
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: $direction;
+}
+//responsive page
+@mixin responsive($breakpoint){
+@if $breakpoint == mobile{
+    @media(max-width:600px){
+        @content
+    }
+}
+@else if  $breakpoint == tablet{
+    @media(min-width:601px)and (max-width:900px){
+        @content
+    }
 }
 
-@mixin button-style($bg-color) {
-    background-color: $bg-color;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: $border-radius;
-    cursor: pointer;
-    transition: background 0.3s;
-
-    &:hover {
-        background-color: darken($bg-color, 10%);
-    }
 }
