@@ -86,10 +86,31 @@
                             <td class="p-4 text-right">20 DT</td>
                             <td class="p-4 text-right">
                               <div class="flex items-center justify-center gap-2">
-                                <button class="w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold border-none cursor-pointer transition-colors duration-300 hover:bg-red-600">-</button>
-                                <span class="text-lg font-medium text-center w-6">1</span>
-                                <button class="w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold border-none cursor-pointer transition-colors duration-300 hover:bg-red-600">+</button>
-                              </div>
+                                <button id="decrement" class="w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold border-none cursor-pointer transition-colors duration-300 hover:bg-red-600">-</button>
+                                <span id="counter" class="text-lg font-medium text-center w-6">1</span>
+                                <button id="increment" class="w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold border-none cursor-pointer transition-colors duration-300 hover:bg-red-600">+</button>
+                            </div>
+                            
+                            <script>
+                                const counterElement = document.getElementById("counter");
+                                const incrementButton = document.getElementById("increment");
+                                const decrementButton = document.getElementById("decrement");
+                            
+                                let count = 1; 
+                            
+                                incrementButton.addEventListener("click", () => {
+                                    count++;
+                                    counterElement.textContent = count;
+                                });
+                            
+                                decrementButton.addEventListener("click", () => {
+                                    if (count > 1) { // Empêche le compteur d'aller en dessous de 1
+                                        count--;
+                                        counterElement.textContent = count;
+                                    }
+                                });
+                            </script>
+                            
                             </td>
                             <td class="p-4 text-right">20 DT</td>
                           </tr>
@@ -102,9 +123,12 @@
                     
                       <div class="flex justify-between items-center mt-9 w-[1120px] mx-auto">
                         <strong class="text-[28px] font-bold text-black font-[Alef]">Total : 20 DT</strong>
-                        <button class="absolute left-[1110px] top-[567px] w-[208px] h-[44px] rounded-[50px] bg-[#E25141] text-white">
-                          <strong class="text-[20px] font-bold font-[Alef]">Commander</strong>
-                        </button>
+                        <button 
+                        class="absolute left-[1110px] top-[567px] w-[208px] h-[44px] rounded-[50px] bg-[#E25141] text-white"
+                        onclick="window.location.href='SuivreColis.html'">
+                        <strong class="text-[20px] font-bold font-[Alef]">Commander</strong>
+                    </button>
+                    
                         
                         
 
