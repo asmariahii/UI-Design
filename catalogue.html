@@ -1,79 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue - LookVibe</title>
-    <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
-    <link href="output.css" rel="stylesheet">
-   
-</head>
-<body class="bg-[#FFE7DE]">
-
-    <!-- Navbar -->
-    <header class="bg-[#5EC2C2] p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-black">LookVibe</h1>
-        <nav class="flex space-x-6">
-            <a href="#" class="text-black hover:text-gray-700">Accueil</a>
-            <a href="#" class="text-black hover:text-gray-700">ChatBot</a>
-            <a href="#" class="text-black hover:text-gray-700">Communauté</a>
-            <a href="#" class="text-black hover:text-gray-700">Service client</a>
-        </nav>
-        <div class="flex space-x-4">
-            <a href="#"><img src="images/search_icon.png" alt="Rechercher" width="24"></a>
-            <a href="#"><img src="images/account_icon.png" alt="Profil" width="24"></a>
-            <a href="#"><img src="images/cart_icon.png" alt="Panier" width="24"></a>
-        </div>
-    </header>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LookVibe - Accueil</title>
+        <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"> <!-- Add CSS file for styling -->
+        <link rel="stylesheet" href="output.css"> <!-- Add CSS file for styling -->
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>LookVibe</h1>
+                <ul class="nav-items">
+                    <!-- Partie texte -->
+                    <li class="text-item"><a href="acceuil.html">Accueil</a></li>
+                    <li class="text-item"><a href="#">ChatBot</a></li>
+                    <li class="text-item"><a href="#">Communauté</a></li>
+                    <li class="text-item"><a href="#">Service client</a></li>
+                </ul>
+                <div class="icons">
+                    <!-- Partie icônes -->
+                    <a href="#"><img src="images/search_icon.png" alt="Rechercher" width="32" height="32"></a>
+                    <a href="#"><img src="images/account_icon.png" alt="Profil" width="32" height="32"></a>
+                    <a href="#"><img src="images/notif_icon.png" alt="Notification" width="32" height="32"></a>
+                    <a href="#"><img src="images/cart_icon.png" alt="Panier" width="32" height="32"></a>
+                </div>
+            </nav>
+        </header>
     <!-- Fil d'Ariane -->
     <section class="max-w-[1150px] mx-auto overflow-hidden">
-        <div class="flex items-center justify-between gap-2 mt-16">
-            <div class="flex items-center">
-                <!-- Appliquer la police Averia sur h2 -->
-                <h2 class="font-averia text-[35px] font-bold mb-16 mt-0">Résultats pour “capuches” <span class="text-red-500">●</span></h2>
+        <!-- Conteneur principal -->
+        <div class="flex items-center justify-between mt-16">
+            <!-- Titre et boutons -->
+            <div class="flex flex-col">
+                <h2 class="font-averia text-[35px] font-bold mt-0">
+                    Résultats pour “capuches” <span class="text-red-500">●</span>
+                </h2>
+    
+                <!-- Boutons alignés horizontalement sous le titre -->
+                <div class="flex space-x-4 mt-10">
+                    <select id="sort" class="px-5 py-2 bg-[#E25141] text-white rounded-full border border-black" onchange="filterProducts()">
+                        <option value="">Trier</option>
+                        <option value="asc">Prix croissant</option>
+                        <option value="desc">Prix décroissant</option>
+                    </select>
+    
+                    <select id="gender" class="px-5 py-2 bg-[#E25141] text-white rounded-full border border-black" onchange="filterProducts()">
+                        <option value="">Genre</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+    
+                    <select id="size" class="px-5 py-2 bg-[#E25141] text-white rounded-full border border-black" onchange="filterProducts()">
+                        <option value="">Taille</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </div>
             </div>
-            <ul class="flex gap-5 mb-16 mr-8 list-none p-0 m-0">
+    
+            <!-- Fil d'Ariane aligné à droite -->
+            <ul class="flex gap-2 list-none p-0 m-0">
                 <li class="font-alef text-[20px] font-normal">
                     <a href="acceuil.html" class="text-black no-underline hover:text-[#53B9C6]">Accueil</a>
                 </li>
-                <li class="font-alef text-[20px] font-normal">
-                    <a  class="text-black no-underline ">></a>
-                </li>
+                <li class="font-alef text-[20px] font-normal">></li>
                 <li class="font-alef text-[20px] font-normal">
                     <a href="catalogue.html" class="text-black no-underline">Capuches</a>
                 </li>
-                
+            </ul>
         </div>
-    
-      
-    
-     
     </section>
-
-    <div class="flex space-x-4 ml-10 mt-4">
-        <select id="sort" class="px-6 py-2 bg-[#E25141] text-white rounded-full" onchange="filterProducts()">
-            <option value="">Trier par prix</option>
-            <option value="asc">Prix croissant</option>
-            <option value="desc">Prix décroissant</option>
-        </select>
-        
-        <select id="gender" class="px-6 py-2 bg-[#E25141] text-white rounded-full" onchange="filterProducts()">
-            <option value="">Genre</option>
-            <option value="homme">Homme</option>
-            <option value="femme">Femme</option>
-        </select>
-        
-        <select id="size" class="px-6 py-2 bg-[#E25141] text-white rounded-full" onchange="filterProducts()">
-            <option value="">Taille</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-        </select>
-    </div>
+    
+           
+    
+    
 
     <!-- Catalogue Produits -->
     <div class="grid grid-cols-3 gap-6 p-10">
@@ -120,11 +129,11 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-[#5EC2C2] p-10 mt-10">
-        <div class="grid grid-cols-4 text-black">
+     <!-- Footer -->
+    <footer>
+        <div class="footer-sections">
             <div>
-                <h3 class="font-bold">Shop</h3>
+                <h3>Shop</h3>
                 <ul>
                     <li>Panier</li>
                     <li>Mes commandes</li>
@@ -132,7 +141,7 @@
                 </ul>
             </div>
             <div>
-                <h3 class="font-bold">Fonctionnalités</h3>
+                <h3>Fonctionnalités</h3>
                 <ul>
                     <li>Avatar 3D</li>
                     <li>Eco-clothes</li>
@@ -140,7 +149,7 @@
                 </ul>
             </div>
             <div>
-                <h3 class="font-bold">Aide & Contact</h3>
+                <h3>Aide & Contact</h3>
                 <ul>
                     <li>Chat-bot</li>
                     <li>Support client</li>
@@ -148,15 +157,15 @@
                 </ul>
             </div>
             <div>
-                <h3 class="font-bold">Suivez-nous</h3>
-                <div class="flex space-x-4 mt-2">
-                    <img src="images/facebook.png" alt="Facebook" width="24">
-                    <img src="images/instagram.png" alt="Instagram" width="24">
-                    <img src="images/linkedin.png" alt="LinkedIn" width="24">
-                </div>
+                <h3>Suivez-nous</h3>
+                <ul class="social-links">
+                    <li><a href="#"><img src="images/facebook.png" alt="Facebook" width="32" height="32"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="Instagram" width="32" height="32"></a></li>
+                <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="32" height="32"></a></li>
+                </ul>
             </div>
         </div>
     </footer>
-
 </body>
+
 </html>
