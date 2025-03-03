@@ -4,7 +4,6 @@
     align-items: center;
     flex-direction: $direction;
 }
-
 // Mixin pour la responsivité
 @mixin responsive($breakpoint) {
     @if $breakpoint == mobile {
