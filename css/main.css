@@ -1,246 +1,4 @@
 @charset "UTF-8";
-.btn {
-  background-color: #d9534f;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-  margin-top: 10px;
-}
-.btn:hover {
-  background-color: rgb(201.4953271028, 48.0841121495, 43.5046728972);
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  background-color: #fbe3da;
-}
-
-.container {
-  display: flex;
-  height: 100vh;
-}
-
-.left {
-  flex: 1;
-  background: url("../images/robe.jpg") no-repeat center center/cover;
-}
-
-.right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fbe3da;
-}
-
-.form-container {
-  text-align: center;
-}
-
-.form {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-}
-.form.active {
-  display: flex;
-}
-.form input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.form .forgot-password {
-  font-size: 14px;
-  color: #d9534f;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-.form .forgot-password:hover {
-  text-decoration: underline;
-}
-.form .password-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.form .password-container input {
-  flex: 1;
-}
-.form .password-container .toggle-password {
-  position: absolute;
-  right: 10px;
-  cursor: pointer;
-}
-
-.toggle {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.toggle .toggle-option {
-  margin: 0 10px;
-  cursor: pointer;
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-  transition: 0.3s ease-in-out;
-}
-.toggle .toggle-option.active {
-  border-bottom: 2px solid #d9534f;
-  padding-bottom: 2px;
-  font-weight: bold;
-}
-.toggle .toggle-option:hover {
-  color: #d9534f;
-}
-
-.social-login {
-  margin-top: 15px;
-}
-.social-login img {
-  width: 30px;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.social-login img:hover {
-  opacity: 0.7;
-}
-
-.product-details {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  padding: 20px;
-}
-.product-details .product-image img {
-  width: 300px;
-  border-radius: 10px;
-}
-.product-details .product-image .product-thumbnails {
-  display: flex;
-  gap: 5px;
-  margin-top: 10px;
-}
-.product-details .product-image .product-thumbnails img {
-  width: 60px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-}
-.product-details .product-image .product-thumbnails img:hover {
-  transform: scale(1.1);
-}
-.product-details .product-info {
-  max-width: 400px;
-}
-.product-details .product-info h1 {
-  font-size: 24px;
-}
-.product-details .product-info .price {
-  font-size: 20px;
-  color: #ff5733;
-  font-weight: bold;
-}
-.product-details .product-info select {
-  width: 100%;
-  padding: 8px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-.product-details .product-info button {
-  background-color: #ff8c8c;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease-in-out;
-}
-.product-details .product-info button:hover {
-  background-color: #ff5959;
-}
-
-
-.related-products {
-  margin-top: 40px;
-  padding: 20px;
-}
-.related-products h2 {
-  font-size: 22px;
-}
-.related-products .related-items {
-  display: flex;
-  gap: 15px;
-}
-.related-products .related-items img {
-  width: 150px;
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out;
-}
-.related-products .related-items img:hover {
-  transform: scale(1.05);
-}
-
-footer {
-  background-color: #53B9C6;
-  color: black;
-  padding: 2rem 0;
-  margin-top: 280px;
-  height: 270px;
-}
-footer .footer-sections {
-  max-width: 1150px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-footer .footer-sections h3 {
-  font-family: "Alef", sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 27px;
-  margin-top: 51px;
-}
-footer .footer-sections ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-footer .footer-sections ul li {
-  font-family: "Alef", sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 16px;
-}
-footer .footer-sections ul li a {
-  color: white;
-  text-decoration: none;
-}
-footer .footer-sections ul li a:hover {
-  color: #53B9C6;
-}
-footer .footer-sections .social-links {
-  display: flex;
-  gap: 1rem;
-}
-footer .footer-sections .social-links img {
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
-}
-
 header {
   background-color: #53B9C6;
   width: 100%;
@@ -251,34 +9,35 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between; /* Aligne le h1 à gauche et les icônes à droite */
-  height: 100%;
-  max-width: 1150px;
-  margin: 0 auto;
+  height: 100%; /* Prend toute la hauteur du header */
+  max-width: 1150px; /* Largeur maximale du header */
+  margin: 0 auto; /* Centre le header horizontalement */
 }
 header nav h1 {
   color: black;
   font-size: 35px;
   font-family: "Average";
-  font-weight: normal;
-  margin: 0;
+  font-weight: normal; /* "Regular" signifie une épaisseur normale */
+  margin: 0; /* Supprime les marges par défaut */
 }
 header nav .nav-items {
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 45px; /* Espacement de 45px entre les éléments textuels */
   list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+  position: absolute; /* Position absolue pour centrer les textes */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Ajuste le centrage */
+  /* Style pour les textes */
 }
 header nav .nav-items .text-item a {
   text-decoration: none;
   color: black;
-  font-family: "Alef", sans-serif;
-  font-size: 20px;
-  font-weight: normal;
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
 }
 header nav .nav-items .text-item a:hover {
   color: white;
@@ -286,7 +45,7 @@ header nav .nav-items .text-item a:hover {
 header nav .icons {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 14px; /* Espacement entre les icônes */
 }
 header nav .icons a {
   text-decoration: none;
@@ -296,9 +55,65 @@ header nav .icons a:hover {
   color: white;
 }
 header nav .icons a img {
-  width: 32px;
+  width: 32px; /* Taille des icônes */
   height: 32px;
-  vertical-align: middle;
+  vertical-align: middle; /* Aligne les icônes verticalement */
+}
+
+footer {
+  background-color: #53B9C6; /* Couleur de fond du footer */
+  color: black; /* Couleur du texte */
+  padding: 2rem 0; /* Espacement intérieur */
+  margin-top: 280px;
+  height: 270px; /* Hauteur du header */
+}
+footer .footer-sections {
+  max-width: 1150px; /* Largeur maximale du contenu */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  display: flex; /* Aligne les sections horizontalement */
+  justify-content: space-between; /* Espace les sections uniformément */
+  padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+footer .footer-sections h3 {
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  margin-bottom: 27px; /* Espacement sous le titre */
+  margin-top: 51px;
+}
+footer .footer-sections ul {
+  list-style: none; /* Supprime les puces */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+}
+footer .footer-sections ul li {
+  font-family: "Alef", sans-serif; /* Police "Alef" */
+  font-size: 20px; /* Taille de la police */
+  font-weight: normal; /* Style "Regular" */
+  margin-bottom: 16px; /* Espacement entre les éléments de la liste */
+}
+footer .footer-sections ul li a {
+  color: black; /* Couleur des liens */
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+footer .footer-sections ul li a:hover {
+  color: #53B9C6; /* Couleur au survol */
+}
+footer .footer-sections .social-links {
+  display: flex; /* Aligne les icônes horizontalement */
+  gap: 1rem; /* Espacement entre les icônes */
+}
+footer .footer-sections .social-links img {
+  width: 32px; /* Taille des icônes */
+  height: 32px;
+  vertical-align: middle; /* Aligne les icônes verticalement */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #FFE5DA;
 }
 
 /*# sourceMappingURL=main.css.map */
