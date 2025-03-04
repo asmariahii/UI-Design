@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LookVibe - Accueil</title>
+        <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="output.css" />
+        <link rel="stylesheet" href="css/main.css"> <!-- Add CSS file for styling -->
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>LookVibe</h1>
+                <ul class="nav-items">
+                    <!-- Partie texte -->
+                    <li class="text-item"><a href="acceuil.html">Accueil</a></li>
+                    <li class="text-item"><a href="#">ChatBot</a></li>
+                    <li class="text-item"><a href="ChatCommunautaire2.html">Communauté</a></li>
+                    <li class="text-item"><a href="#">Service client</a></li>
+                </ul>
+                <div class="icons">
+                    <!-- Partie icônes -->
+                    <a href="#"><img src="images/search_icon.png" alt="Rechercher" width="32" height="32"></a>
+                    <a href="Profil.html"><img src="images/account_icon.png" alt="Profil" width="32" height="32"></a>
+                    <a href="#"><img src="images/notif_icon.png" alt="Notification" width="32" height="32"></a>
+                    <a href="Panier.html"><img src="images/cart_icon.png" alt="Panier" width="32" height="32"></a>
+                </div>
+            </nav>
+        </header>
+        <script>
+            function sendMessage() {
+                let inputField = document.getElementById("chat-input");
+                let messageText = inputField.value.trim();
+                if (messageText !== "") {
+                    let chatContainer = document.querySelector(".chat-container");
+                    let messageDiv = document.createElement("div");
+                    messageDiv.className = "chat-message text-right";
+                    messageDiv.innerHTML = `<p style='background: #FFE5DA; padding: 10px; border-radius: 10px; display: inline-block;'>${messageText}</p>`;
+                    chatContainer.appendChild(messageDiv);
+                    chatContainer.scrollTop = chatContainer.scrollHeight;
+                    inputField.value = "";
+                }
+            }
+        </script>
+               
+
+<main class="text-left p-5 bg-[#FFE5DA] rounded-lg max-w-[1200px] mx-auto mt-8">
+
+
+<section>
+
+<div class="flex items-center justify-between gap-2 mt-16">
+    <div class="flex items-center">
+        <!-- Appliquer la police Averia sur h2 -->
+        <h2 class="font-averia text-[35px] font-bold mb-16 mt-0">Service Client </h2>
+        <img src="images/oussema_Ellipse 1.png" alt="Ellipse" class="mb-16 ml-5">
+    </div>
+    <ul class="flex gap-5 mb-16 mr-8 list-none p-0 m-0">
+        <li class="font-alef text-[20px] font-normal">
+            <a href="acceuil.html" class="text-black no-underline hover:text-[#53B9C6]">Accueil</a>
+        </li>
+        <li class="font-alef text-[20px] font-normal">
+            <a  class="text-black no-underline"> > </a>
+        </li>
+        <li class="font-alef text-[20px] font-normal">
+            <a href="ServiceClient.html" class="text-black no-underline hover:text-[#53B9C6]">Service Client</a>
+        </li>
+    </ul>
+</div>
+
+
+
+<!-- Conteneur du chat -->
+<div class="flex justify-center items-center bg-white rounded-[50px] shadow-lg mx-auto my-8"
+    style="width: 90%; max-width: 950px; height: 750px; padding-top: 20px;">
+    <div class="p-6 space-y-4 w-full">
+    
+
+
+
+
+     <!-- Réponse du modérateur (à gauche) -->
+  <div class="flex justify-start items-start space-x-2">
+    <div class="w-8 h-8 bg-[#E25141] rounded-full flex items-center justify-center">
+        <img src="./images/OIP.jpg" alt="Moderator Icon" class="w-5 h-5">
+    </div>
+    <div class="bg-white p-4 rounded-[50px] max-w-[400px] mr-auto">
+        <p class="font-alef text-[19px] font-normal text-black">
+            👋 Bonjour je m’appelle <strong>@Ahmed</strong> ! Pour toute réclamation, veuillez envoyer un message ou lancer un appel vidéo. 📩📹
+        </p>
+    </div>
+</div>
+ 
+
+<!-- Message de l'utilisateur (à droite, bien décalé) -->
+<div class="chat-message text-right" style="margin-bottom: 8px;">
+    <p style="background: #FFE5DA; padding: 10px; border-radius: 10px; display: inline-block;">            Bonjour, j’ai attendu 5 jours pour prendre mon t-shirt s’il te plaît ..
+    </p>
+</div>
+
+
+
+
+   <!-- Réponse du modérateur -->
+   <div class="flex items-start gap-2">
+    <img src="./images/OIP.jpg" alt="Moderator Icon" class="w-8 h-8 rounded-full">
+    <p class="bg-white p-3 rounded-[20px] max-w-[400px] text-black text-sm">
+        Nous sommes vraiment désolés monsieur, vous recevrez votre t-shirt dans 2 heures.
+    </p>
+</div>
+
+
+<!-- Message de l'utilisateur (à droite, bien décalé) -->
+<div class="chat-message text-right" style="margin-bottom: 8px;">
+    <p style="background: #FFE5DA; padding: 10px; border-radius: 10px; display: inline-block;">            D’accord, merci beaucoup !
+
+    </p>
+</div>
+
+
+ 
+
+
+<!-- Dernier message du modérateur -->
+<div class="flex items-start gap-2">
+    <img src="./images/OIP.jpg" alt="Moderator Icon" class="w-8 h-8 rounded-full">
+    <p class="bg-white p-3 rounded-[20px] max-w-[400px] text-black text-sm">
+        De rien monsieur !
+    </p>
+</div>
+
+
+
+<div class="chat-container">
+    <div class="chat-message">
+    </div>
+</div>
+
+
+<!-- Zone de saisie -->
+<div class="input-container" 
+style="margin: 10px auto; display: flex; align-items: center; background-color: #FFE5DA; padding: 8px 15px; border-radius: 50px; width: 100%; max-width: 600px;">
+<input id="chat-input" type="text" placeholder="Message..." 
+    style="flex: 1; padding: 12px 15px; border: none; background-color: #FFE5DA; border-radius: 50px; outline: none; font-size: 16px;">
+<button onclick="sendMessage()" 
+    style="margin-left: 12px; background: #E25141; color: white; border: none; 
+    padding: 12px 18px; border-radius: 50%; cursor: pointer; font-size: 18px;">⬆</button>
+</div>
+
+    </div>
+</div>
+</section></main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-sections">
+        <div>
+            <h3>Shop</h3>
+            <ul>
+                <li>Panier</li>
+                <li>Mes commandes</li>
+                <li>Suivre mon colis</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Fonctionnalités</h3>
+            <ul>
+                <li>Avatar 3D</li>
+                <li>Eco-clothes</li>
+                <li>Chat communautaire</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Aide & Contact</h3>
+            <ul>
+                <li>Chat-bot</li>
+                <li>Support client</li>
+                <li>Réclamation</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Suivez-nous</h3>
+            <ul class="social-links">
+                <li><a href="#"><img src="images/facebook.png" alt="Facebook" width="32" height="32"></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt="Instagram" width="32" height="32"></a></li>
+            <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="32" height="32"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
